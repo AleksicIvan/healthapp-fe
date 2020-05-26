@@ -10,5 +10,7 @@ Your health within your hands.
 This repository has a **frontend code** for **Healthapp/Nazdravlje** done with [React - Javascript Frontend Library](https://reactjs.org/) and [React Material UI](https://material-ui.com/) for application design and User Interface.
 The application structure is done following [monorepo](https://en.wikipedia.org/wiki/Monorepo) strategy in order to build reusable and compatible logic and services that can be shared between React Web and React Native code. 
 
+Demo recording and screen shots can be found [here](https://drive.google.com/open?id=1GLhNh8ygHPe4hrYcFolqpsvf50BuveWF).
+
 The project was developed as part of the assignment for the course 
 **Advanced Software Technologies** on Master's studies - Software Engineering and Computer Sciences at the **Faculty of Organization Sciences, University of Belgrade, Serbia**.
