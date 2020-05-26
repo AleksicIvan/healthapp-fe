@@ -11,7 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 import { UserContext } from '../context/UserContext'
  
-const doSmallFlexGrowRoutes = ['/pregledi', '/lekari', '/zdravstvene-ustanove', '/specijalizacije']
+const doSmallFlexGrowRoutes = ['/pregledi', '/lekari', '/zdravstvene-ustanove', '/specijalizacije', '/']
 
 const useStyles = pathname => makeStyles((theme) => {
   return {

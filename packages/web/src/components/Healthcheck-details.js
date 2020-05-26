@@ -231,7 +231,7 @@ const HealthcheckDetails = (props) => {
             <div>
               <Typography variant="h5">Datum:{' '}</Typography>
               <div>
-                <DatePicker disabled={disabled} />
+                <DatePicker disabled={disabled} value={healthcheckDate} onChange={setHealthcheckDate} />
               </div>
             </div>
             <br />

@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
+import CenteredBox from './CenteredBox'
 
 import { UserContext } from '../context/UserContext'
 import { me } from '@healthapp/common/services/auth'
