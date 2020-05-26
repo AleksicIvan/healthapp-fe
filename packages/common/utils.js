@@ -42,13 +42,25 @@ export const routeByName = (routeName, params = {}, auth = false) => {
 }
 
 export const displayName = (entity) => {
+  if (!entity) {
+    return ''
+  }
+
+  if (entity?.fullName) {
+    return entity.fullName
+  }
+
+  if (entity?.name) {
+    return entity.name
+  }
+  
   return entity?.firstName && entity?.lastName
     ? `${entity.firstName} ${entity.lastName}`
     : entity?.firstName
     ? `${entity.firstName}`
     : entity?.lastName
     ? `${entity.lastName}`
-    : 'No name provided'
+    : ''
 }
 
 export const displayAddress = (address) => {

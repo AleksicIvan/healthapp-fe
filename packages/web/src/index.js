@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import ErrorBoundry from './components/Error'
 import UserContextProvider from './context/UserContext'
+import { SnackbarProvider } from 'notistack'
+import { MuiPickersUtilsProvider } from '@material-ui/pickers'
+import MomentUtils from '@date-io/moment'
 
 import * as serviceWorker from './serviceWorker';
 
@@ -11,7 +14,11 @@ ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundry>
       <UserContextProvider>
-        <App />
+        <SnackbarProvider maxSnack={3}>
+        <MuiPickersUtilsProvider utils={MomentUtils}>
+          <App />
+        </MuiPickersUtilsProvider>
+        </SnackbarProvider>
       </UserContextProvider>
     </ErrorBoundry>
   </React.StrictMode>,

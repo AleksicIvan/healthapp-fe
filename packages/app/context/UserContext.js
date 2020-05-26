@@ -26,11 +26,6 @@ const UserContextProvider = (props) => {
         ...state,
         authDispatch: dispatch
       }}>
-      {
-
-  console.log('jedikurac: ', state)
-
-      }
       {props.children}
     </UserContext.Provider>
   )

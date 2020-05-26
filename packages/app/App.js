@@ -58,7 +58,6 @@ function DetailsScreen ({ route, navigation }) {
 function HomeScreen({ navigation }) {
   const [isLoading, data] = useJsonPlaceholder()
   const state = React.useContext(AuthContext)
-  console.log('state from HomeScreen', state)
   return (
     <SafeAreaView style={styles.container}>
       <Text>Time from @ivan/common: {getTimeNow()}</Text>

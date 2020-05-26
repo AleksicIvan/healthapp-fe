@@ -28,8 +28,8 @@ import { makeStyles } from "@material-ui/core/styles"
 export default (props) => {
   return (
     <div>
-      <h1>Dobro došli u healthup...</h1>
-      <div>Vaše zdravlje na prvom mestu</div>
+      <h1>Dobro došli u Nazdravlje aplikaciju</h1>
+      <div>Vaše zdravlje u Vašim rukama</div>
     </div>
   )
 }
