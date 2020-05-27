@@ -15,6 +15,7 @@ export default {
   'api.hospitals.create': '/api/hospitals',
   'api.hospitals.search': '/api/hospitals/search',
   'api.healthchecks': '/api/users/{userId}/healthchecks',
+  'api.healthchecks.user.search': '/api/users/{userId}/healthchecks/search',
   'api.healthchecks.create': '/api/healthchecks',
   'api.healthchecks.update': '/api/healthchecks/update',
   'api.healthchecks.delete': '/api/healthchecks/{healthCheckId}',

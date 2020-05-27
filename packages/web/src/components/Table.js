@@ -37,9 +37,6 @@ const StyledTableRow = withStyles((theme) => ({
       backgroundColor: theme.palette.action.hover,
     },
   },
-  paginationRow: {
-
-  }
 }))(TableRow)
 
 

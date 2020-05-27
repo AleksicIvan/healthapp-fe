@@ -21,7 +21,7 @@ import CenteredBox from './CenteredBox'
 
 import { searchDoctors } from '@healthapp/common/services/doctors'
 import { getAllHospitals } from '@healthapp/common/services/hospitals'
-import { searchChecks } from '@healthapp/common/services/healthchecks'
+import { searchUserChecks } from '@healthapp/common/services/healthchecks'
 
 import { displayName, displayAddress } from '@healthapp/common/utils'
 import { UserContext } from '../context/UserContext'
@@ -238,7 +238,7 @@ const Healthchecks = (props) => {
   const goSearch = async () => {
     setIsLoading(true)
     try {
-      const hcRes = await searchChecks({
+      const hcRes = await searchUserChecks(user?.user?.id, {
         fullName: searchFullName || undefined,
         specialization: searchSpecialization || undefined,
         pageNo: page === 1 ? 0 : page - 1

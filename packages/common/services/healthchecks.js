@@ -16,6 +16,19 @@ const getChecks = (userId, filters) => {
     .catch((e) => console.error(e))
 }
 
+const searchUserChecks = (userId, filters = {}) => {
+  return axiosDecorator(localStorage)
+    .then(axiosInstance => {
+      return axiosInstance
+        .get(routeByName(['api.healthchecks.user.search'], {userId}), {
+          params: {
+            ...filters
+          }
+        })
+    })
+    .catch((e) => console.error(e))
+}
+
 const searchChecks = (filters = {}) => {
   return axiosDecorator(localStorage)
     .then(axiosInstance => {
@@ -84,6 +97,7 @@ export {
   addCheck,
   updateCheck,
   getChecks,
+  searchUserChecks,
   searchChecks,
   getCheckDetails,
   deleteHealthcheck
